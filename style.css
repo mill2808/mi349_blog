@@ -34,25 +34,22 @@ h1 {
 p {
     line-height: 1.4em;
     width: 400px;
-    
+    text-align: justify;
 }
 
 img{
     float: left;
     width: 200px;
     border-right: 10px solid #fff;
-
 }
 
-#blog {
+.blog_post {
     font-size: 1em;
     display: flex;
-
 }
 
 .blog-post {
     border-bottom: 1px dotted #ccc;
-
 }
 
 article {
@@ -60,15 +57,16 @@ article {
 }
 
 article:nth-of-type(1) {
-    flex: 200px;
     margin-right: 40px;
 }
-
-article:nth-of-type(2) {
-    flex: 200px; }
 
 a[href$="https://en.wikipedia.org/wiki/Glacier_National_Park_(U.S.)"] {
         font-style:italic
 }
 
-
+/* Media queries */
+@media (min-width: 400px ) {
+    .blog_post {
+        display: block;
+    }
+} 
